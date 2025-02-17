@@ -57,4 +57,5 @@ lib/
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/flutter-todo-clean-architecture.git
+
+https://github.com/MoNia1126/clean_architecture.git
