@@ -47,8 +47,5 @@ firebase appdistribution:distribute build/app-release.apk \
 
 - 📝 Well-structured and modular code.
 
-### Screenshots
 
-![Id](Id.png)
-![Test](test.png)
 
