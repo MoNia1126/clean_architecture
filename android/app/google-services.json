@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "182270922253",
+    "project_id": "clean-architecture-ce99e",
+    "storage_bucket": "clean-architecture-ce99e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182270922253:android:a12b10b3118773a433cf44",
+        "android_client_info": {
+          "package_name": "com.example.clean_architecture_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7a65DPawuWTqYqODRiDbHzU-0N59ALQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

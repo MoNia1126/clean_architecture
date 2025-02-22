@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "directories": [
+        {
+          "build": ".",
+          "jsonFile": "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+          "minimumCMakeVersion": {
+            "string": "3.6.0"
+          },
+          "projectIndex": 0,
+          "source": "."
+        }
+      ],
+      "name": "RelWithDebInfo",
+      "projects": [
+        {
+          "directoryIndexes": [
+            0
+          ],
+          "name": "Project"
+        }
+      ],
+      "targets": []
+    }
+  ],
+  "kind": "codemodel",
+  "paths": {
+    "build": "D:/clean_architecture/android/app/.cxx/RelWithDebInfo/4a2r3g2a/arm64-v8a",
+    "source": "C:/src/flutter/packages/flutter_tools/gradle/src/main/groovy"
+  },
+  "version": {
+    "major": 2,
+    "minor": 3
+  }
+}

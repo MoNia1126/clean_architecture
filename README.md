@@ -2,61 +2,81 @@
 
 ## 📌 Overview
 
-This is a **Flutter** app built using **Clean Architecture** principles. It follows a layered
-architecture to separate concerns and uses **Dependency Injection (DI)** with **GetIt** for better
-maintainability.  
-The app allows users to **fetch a list of To-Do tasks** from a remote API and display them in a
-simple UI.
+This document outlines the testing and distribution process for the Flutter To-Do List App using
+Firebase and App Distribution.
 
 ---
 
-## 📂 Project Structure
+## 🔍 Testing Strategy
 
-The project is organized into three main layers:
-lib/
-│-- data/ # Data Layer (APIs, Models, Data Sources)
-│ ├── models/ # DTOs (Data Transfer Objects)
-│ ├── repositories/ # Repository Implementations
-│ ├── sources/ # Remote & Local Data Sources
-│-- domain/ # Domain Layer (Use Cases, Entities, Repositories)
-│ ├── entities/ # Core Business Entities
-│ ├── repositories/ # Repository Abstraction
-│ ├── usecases/ # Business Logic (Use Cases)
-│-- presentation/ # UI Layer (View, State Management)
-│ ├── Screens/ # UI Screens
-│ ├── state_management/ # ViewModels / (BLoCs, Provider)
-│-- di/ # Dependency Injection (GetIt Service Locator)
-│-- main.dart # Entry Point
+### 1️⃣ Setup Firebase in Flutter
 
+- Integrated **Firebase Authentication** and **Firestore**.
+- Used **Firebase CLI** for deployment.
 
-
-
----
-
-## 🚀 Features
-
-- ✅ **Fetch To-Do List** from a remote API.
-- 🛠 **Clean Architecture** with well-structured layers.
-- 🎯 **Dependency Injection** using GetIt.
-- 🔄 **State Management** with Provider.
-- 📝 **Well-structured and modular code**.
-
----
-
-## 🔧 Technologies Used
-
-- **Flutter**
-- **Dart**
-- **GetIt (for DI)**
-- **Provider (for State Management)**
-- **Http (for API calls)**
-
----
-
-## 📥 Installation & Usage
-
-1. **Clone the repository**
-
-```sh
-https://github.com/MoNia1126/clean_architecture.git
+```bash
+firebase login
+firebase init
 ```
+
+### 2️⃣ App Distribution with Firebase
+
+- **App Distribution** forUploaded APK/AAB for testers.
+- Provided real-time crash reports via Crashlytics.
+
+```bash
+firebase appdistribution:distribute build/app-release.apk \
+--app <YOUR_FIREBASE_APP_ID> \
+--groups testers \
+--release-notes "Bug fixes & performance improvements"
+```
+
+### 3️⃣ Testers Access
+
+- Invited testers via Firebase Console.
+- Sent email notifications for new releases.
+
+### 🚀 Features
+
+- ✅ Fetch To-Do List from a remote API.
+
+- 🛠 Clean Architecture with well-structured layers.
+
+- 🎯 Dependency Injection using GetIt.
+
+- 🔄 State Management with Provider.
+
+- 📝 Well-structured and modular code.
+
+### Screenshots
+
+![Id](Id.png)
+![Test](test.png)
+
+### 🚀 Firebase Setup & App Distribution
+
+### 1️⃣ Setup Firebase in Flutter
+
+- Used Firebase CLI for deployment.
+
+```bash
+firebase login
+firebase init
+```
+
+### 2️⃣ App Distribution with Firebase
+
+- Uploaded APK/AAB for testers.
+
+```bash
+firebase appdistribution:distribute build/app-release.apk \
+--app <YOUR_FIREBASE_APP_ID> \
+--groups testers \
+--release-notes "Bug fixes & performance improvements"
+```
+
+### 3️⃣ Testers Access
+
+- Invited testers via Firebase Console.
+
+- Sent email notifications for new releases.
