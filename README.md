@@ -10,8 +10,7 @@ Firebase and App Distribution.
 ## 🔍 Testing Strategy
 
 ### 1️⃣ Setup Firebase in Flutter
-
-- Integrated **Firebase Authentication** and **Firestore**.
+- 
 - Used **Firebase CLI** for deployment.
 
 ```bash
@@ -53,30 +52,3 @@ firebase appdistribution:distribute build/app-release.apk \
 ![Id](Id.png)
 ![Test](test.png)
 
-### 🚀 Firebase Setup & App Distribution
-
-### 1️⃣ Setup Firebase in Flutter
-
-- Used Firebase CLI for deployment.
-
-```bash
-firebase login
-firebase init
-```
-
-### 2️⃣ App Distribution with Firebase
-
-- Uploaded APK/AAB for testers.
-
-```bash
-firebase appdistribution:distribute build/app-release.apk \
---app <YOUR_FIREBASE_APP_ID> \
---groups testers \
---release-notes "Bug fixes & performance improvements"
-```
-
-### 3️⃣ Testers Access
-
-- Invited testers via Firebase Console.
-
-- Sent email notifications for new releases.
